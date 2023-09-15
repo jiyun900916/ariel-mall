@@ -47,7 +47,7 @@ https://git-scm.com/downloads
 터미널 +버튼 gitbash 클릭 
 1)$ git init (초기화)
 2)$ git add .   -> github에 업로드 대기중 (모든파일이 다올라감)
-3)$ git status
+3)$ git status -> 상황
 4)$ git commit -m "first react shoppingmall project"        -------------->"first react shoppingmall project" :코멘트
 5)$ git remote add origin https://github.com/jiyun900916/ariel-mall.git
 6)$ git push -u origin main
