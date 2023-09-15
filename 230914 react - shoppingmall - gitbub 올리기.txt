@@ -111,17 +111,6 @@ defloy > open
 
 
 
+git add .
 
-
-
-
-
-
-
-
-1)$ git add .   
-2)$ git status 
-3)$ git commit -m "Login page 로그인 버튼 경로수정"   
-4)$ git remote add origin https://github.com/jiyun900916/ariel-mall.git
-5)$ git push -u origin main
-요렇게 되는 것 맞을까용?
+git commit -m "Login page 로그인 버튼 경로수정"
