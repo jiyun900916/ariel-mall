@@ -15,7 +15,7 @@ product Detail  에  제이슨 연결 할수 있도록 들어가있다.
 
 https://my-json-server.typicode.com/
 
-https://www.netlify.com/
+https://www.netlify.com/ 어떠한 환경에서는 사용 배포가능 
 
 https://github.com/jiyun900916/ariel-mall
 
@@ -28,7 +28,8 @@ Visit https://my-json-server.typicode.com/<your-username>/<your-repo> to access 
 <your-username> : jiyun900916
 <your-repo> : ariel-mall
 
-
+Login
+Log in with GitHub < Authorize netilfy
 
 마지제이슨 페이크서버에 올릴 수 있도록 주소 수정
 
@@ -44,11 +45,60 @@ git bash  설치하기
 https://git-scm.com/downloads
 
 터미널 +버튼 gitbash 클릭 
-1)$ git init
-2)$ git add .
+1)$ git init (초기화)
+2)$ git add .   -> github에 업로드 대기중 (모든파일이 다올라감)
 3)$ git status
-4)$ git commit -m "first react shoppingmall project"
+4)$ git commit -m "first react shoppingmall project"        -------------->"first react shoppingmall project" :코멘트
+5)$ git remote add origin https://github.com/jiyun900916/ariel-mall.git
+6)$ git push -u origin main
+
+
+
+// 특정 파일만 업로드 할때는 
+5) git add Navbar.js
+
+https://www.netlify.com/  다시 가서 확인
+site overwiew > domainsetting > option > chage site name [ 사이트 이름 변경 - 영문으로만 입력 가능 ]
+
+
+=========================================================
+
+다시 git 설정
+1)$ git init (초기화)
+$ clear 치면 사라짐(화면ㅅ)
+1)$ git init (초기화)
+
+2)$ git config --global user.name "jiyun900916"  --->로컬 저장소 저장 됨 (1번은 해줘야됨)
+3)$ git config --global user.emai "jiyun900916@gmail.com" --->로컬 저장소 저장 됨 (1번은 해줘야됨)
+4)$ git config --list
+shift q->빠져나가기
+
+
+
+config: 환경설정
+
+gitignore 페이지 들어가서 git에 사용하지 않는 파일을 보관  할 수 있다. <보이지 않아야될것 추릴 수 있다.>
+
+
+
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/learn2306/react.git'
+--------------------------------------------------------------------------------------
+error: failed to push some refs to 'https://github.com/jiyun900916/ariel-mall.git'
+
+
+에러시 해결 방법
+git checkout -b "main"
+git push origin main
+
+git bash에서 로그인한 계정 변경하는 방법
+https://hoohaha.tistory.com/31
 
 
 
 
+
+CI=flase npm run bild
+
+defloy
