@@ -1,0 +1,42 @@
+import React, { useEffect, useState } from 'react';
+import ProductCard from '../component/ProductCard';
+import {Container, Row, Col} from 'react-bootstrap'
+import { useSearchParams } from 'react-router-dom';
+
+const ProdutAll = () => {
+  const [productList, setProductList] = useState([]);
+  const [query, setQuery] = useSearchParams(); // 함수역활을 하기때문에 값을 넣거나 빈 공간 표시 해줘야됨 - 값입력시 초기 변수값으로 적용됨
+  const getProducts = async() => {
+    //let url = 'http://localhost:5000/products/'
+    //getProduct함수를 통해서 API를 호출할 때에 쿼리(query)에 있는 값을 넣어줌
+    let searchQuery=query.get('q')||"";
+    let url = `http://localhost:5000/products?q=${searchQuery}`
+    let response = await fetch(url);
+    let data = await response.json();
+    console.log(data)
+    setProductList(data) // <-반드시 입력해야 확인가능 
+  }
+
+//useState 특정요소가 바뀐값만 , useEffect 전체적으로 (랜더링) 뿌려주는 역활 콜백함수
+//마운트 되었다 : 읽었다(ex:cd 내용 읽기) / 언마우트: 읽기 해제됨  (ex:cd 꺼내기)   
+useEffect(() => {
+    getProducts()
+    
+  }, [query])//페이지를 로드할때 딱 한번번 뿌려주고 재실행하지 않을때  "[]" 빈배열을 사용 한다.
+
+  return (
+    <Container>
+      <Row>
+        {
+          productList.map((menu, idx) => (
+            <Col lg={3} key={idx}>
+              <ProductCard item={menu} /> {/* props 로 내보내기 하기위한 것 */}
+            </Col>
+            ))
+        }
+      </Row>
+    </Container>
+  );
+}
+
+export default ProdutAll;

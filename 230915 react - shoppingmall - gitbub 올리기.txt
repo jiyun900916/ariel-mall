@@ -1,0 +1,51 @@
+remote : 링크 연결  Link to  나 a 태그 처럼 연결 만 시켜놓음
+push 를해야 파일이 올라감
+
+main (작년 master)
+
+pull 서버에 있는 자료를 다운 받고 끌어오는 것
+
+깃에 올라가는 최종본을 다운받고 다시 작업한 것을 올리라는 소리
+
+
+product All 
+
+product Detail  에  제이슨 연결 할수 있도록 들어가있다.
+
+
+https://my-json-server.typicode.com/
+
+https://www.netlify.com/
+
+https://github.com/jiyun900916/ariel-mall
+
+
+Create a repository on GitHub (<your-username>/<your-repo>)
+Create a db.json file
+Visit https://my-json-server.typicode.com/<your-username>/<your-repo> to access your server
+
+
+<your-username> : jiyun900916
+<your-repo> : ariel-mall
+
+
+
+마지제이슨 페이크서버에 올릴 수 있도록 주소 수정
+
+
+
+input 타입 button 은 배경 처리 해서 이미지 넣어야됨 단일
+그래서 butoon 을 사용함
+
+
+
+
+git bash  설치하기
+https://git-scm.com/downloads
+
+터미널 +버튼 gitbash 클릭 
+1) $ git init
+
+
+
+
