@@ -44,7 +44,10 @@ git bash  설치하기
 https://git-scm.com/downloads
 
 터미널 +버튼 gitbash 클릭 
-1) $ git init
+1)$ git init
+2)$ git add .
+3)$ git status
+4)$ git commit -m "first react shoppingmall project"
 
 
 
