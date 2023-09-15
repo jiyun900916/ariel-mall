@@ -101,4 +101,16 @@ https://hoohaha.tistory.com/31
 
 CI=flase npm run bild
 
-defloy
+defloy > open 
+
+
+
+
+
+
+
+
+
+git add .
+
+git commit -m "Login page 로그인 버튼 경로수정"
